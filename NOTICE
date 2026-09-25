@@ -1,0 +1,14 @@
+Thought-Guided Steering
+Anonymous review release
+
+This distribution includes evaluator prompt material derived from ToolEmu:
+https://github.com/ryoungj/ToolEmu
+Licensed under the Apache License, Version 2.0; see LICENSE.
+
+Safety and helpfulness prompt structures were rendered into standalone JSON
+with runtime placeholders retained and research extensions applied. The ToolEmu
+simulator is not included. Other teacher and goal-evaluation templates originate
+from the authors' research implementation.
+
+The direction construction follows Contrastive Activation Addition (CAA).
+External dependencies, models, and datasets retain their respective licenses.

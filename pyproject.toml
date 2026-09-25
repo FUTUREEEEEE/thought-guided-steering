@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thought-guided-steering"
+version = "0.1.0.dev3"
+description = "Anonymous review package for thought-guided agent safety steering"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Anonymous Authors"}]
+dependencies = ["numpy>=1.24,<3", "scipy>=1.10", "scikit-learn>=1.3,<2"]
+
+[project.optional-dependencies]
+model = ["torch>=2.2", "transformers>=4.51,<6"]
+
+[project.scripts]
+steering-review = "thought_guided_steering.cli:main"
+
+[tool.setuptools.package-data]
+thought_guided_steering = ["prompts/*.txt", "prompts/*.json"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

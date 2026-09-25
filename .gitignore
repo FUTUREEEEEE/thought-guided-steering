@@ -1,0 +1,42 @@
+# Python and build products
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local data, model state, and run output
+/data/
+/models/
+/checkpoints/
+/runs/
+/tmp/
+*.pt
+*.pth
+*.safetensors
+*.npy
+*.npz
+
+# Editor and OS state
+.idea/
+.vscode/
+.DS_Store
+
+# User-supplied data and generated experiment records
+*.csv
+*.jsonl
+*.log
+/results/
+/artifacts/
